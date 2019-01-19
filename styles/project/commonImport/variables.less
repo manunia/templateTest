@@ -1,0 +1,51 @@
+@font-face {
+  font-family: AvenirNext;
+  src: url(../../fonts/AvenirNext-Bold.ttf);
+  src: url(../../fonts/AvenirNext-BoldItalic.ttf);
+  src: url(../../fonts/AvenirNext-DemiBold.ttf);
+  src: url(../../fonts/AvenirNext-DemiBoldItalic.ttf);
+  src: url(../../fonts/AvenirNext-Heavy.ttf);
+  src: url(../../fonts/AvenirNext-HeavyItalic.ttf);
+  src: url(../../fonts/AvenirNext-Italic.ttf);
+  src: url(../../fonts/AvenirNext-Medium.ttf);
+  src: url(../../fonts/AvenirNext-MediumItalic.ttf);
+  src: url(../../fonts/AvenirNext-Regular.ttf);
+  src: url(../../fonts/AvenirNext-UltraLight.ttf);
+  src: url(../../fonts/AvenirNext-UltraLightItalic.ttf);
+}
+
+@fonnt_Main_family: AvenirNext, sans-serif;
+@font_Main_color: #fffefe;
+@font_Secondary_color: #262626;
+
+@font_average_color: #b3b3b3;
+
+@font_btn_color: #ffffff;
+@backgr_btn_color: #2856b3;
+
+.btnMixin() {
+  font-family: @fonnt_Main_family;
+  color: @font_btn_color;
+  font-size: 20px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 60px; /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  background-color: @backgr_btn_color;
+  box-shadow: 0 10px 35px 0 rgba(40, 86, 179, 0.2);
+  border-radius: 30px;
+  border: none;
+  width: 236px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.bacgrGradientMixin() {
+  background-color:  rgba(46, 97, 183, 0);
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 6%, rgba(0, 0, 0, 0.34) 100%);
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 6%, rgba(0, 0, 0, 0.34) 100%);
+  background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 6%, rgba(0, 0, 0, 0.34) 100%);
+  background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 6%, rgba(0, 0, 0, 0.34) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.34) 6%, rgba(0, 0, 0, 0.34) 100%);
+  width: 100%;
+  height: 138px;
+}

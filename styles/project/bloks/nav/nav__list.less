@@ -1,0 +1,20 @@
+.nav__list {
+  list-style: none;
+  font-family: @fonnt_Main_family;
+  color: @font_Main_color;
+  font-size: 18px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+  line-height: 60px; /* Приближение из-за подстановки шрифтов */
+  opacity: 0.75;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:hover .nav__dropdown {
+    display: block;
+  }
+}
